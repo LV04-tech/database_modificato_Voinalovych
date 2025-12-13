@@ -1,0 +1,115 @@
+*{
+  font-family: "Raleway", sans-serif;
+}
+
+.nav{
+  height: 150px;
+ 
+ }
+
+
+.nav-link{
+  font-size: 40px;
+  font-family: "Lobster", sans-serif;
+}
+
+.navbar{
+  background-color: rgb(122, 159, 157);
+}
+
+/* welcome  */
+
+.bg-background{
+  background-image: url(../../public/travelMan.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+}
+
+.text-custom{
+  color:  rgb(76, 73, 73);
+  font-size: 60px;
+  font-family: "Lobster", sans-serif;
+  
+}
+ /* travel  */
+.bg-back{
+  background-image: url(../../public/furgoncino.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+}
+.subject{
+  font-family:"Lobster", sans-serif; 
+  color:  rgb(112, 192, 152);
+}
+
+/* our contacts  */
+
+.bg-b{
+  background-image: url(../../public/ourcontacts.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+}
+
+/* card  */
+
+.card{
+  border: 3px solid grey;
+  border-radius: 80px;
+  background-color: rgb(122, 159, 157) ;
+ 
+}
+.card-title{
+  font-family:  "Lobster", sans-serif;
+  color: white;
+}
+
+.round{
+ size: 50px;
+ height: 150px;
+ object-position: center;
+}
+
+.card-body{
+  text-align: center;
+}
+
+/* viaggi  */
+
+.photo{
+  border: 3px solid grey;
+  background-color: rgb(122, 159, 157)
+  
+}
+.text{
+  text-align: center;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  
+}
+
+a.btn{
+  height: 40px;
+  width: 150px;
+  border: 3px solid grey;
+  background-color:rgb(192, 204, 204);
+  color: black;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.btn:hover{
+  font-family: "Lobster", sans-serif;
+  transform: scale(1.1);
+  background-color: rgb(112, 192, 152);
+  color: white;
+  border: 2px solid grey;
+}
