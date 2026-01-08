@@ -11,7 +11,7 @@
           @csrf
           <div class="mb-3">
             <label for="location" class="form-label">Luogo</label>
-            <input type="text" name="place" class="form-control" id="location" aria-describedby="placeHelp">  
+            <input type="text" name="location" class="form-control" id="location" aria-describedby="placeHelp">  
           </div>
           <div class="mb-3">
             <label for="year" class="form-label">Anno</label>

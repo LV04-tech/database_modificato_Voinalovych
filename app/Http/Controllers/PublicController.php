@@ -49,7 +49,7 @@ class PublicController extends Controller
   
   public function store(Request $request)
   {
-    $place = Place::create([
+    $places = Place::create([
       'location'=> $request->location,
       'year'=> $request->year,
       'description'=> $request->description,
