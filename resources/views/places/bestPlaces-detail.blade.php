@@ -13,8 +13,10 @@
         </div>
         <div class="row align-items-center justify-content-center text-center">
         <div class="col-6 col-md-4 ">
-          <h5>{{$place['localita']}}</h5>
-          <h6>{{$place['voto'] }}</h6>
+          <h5>{{$place['location']}}</h5>
+          <h6>{{$place['year'] }}</h6>
+          <h6>{{$place['description'] }}</h6>
+
          
         </div>
         <div class="row align-items-center justify-content-center text-center">
