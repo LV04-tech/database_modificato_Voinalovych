@@ -59,9 +59,7 @@ class PublicController extends Controller
     // $img = null;
     
    if($request->file('img')){
-    $img = $request
-         ->file('img')
-         ->store('img','public');
+    $img = $request->file('img')->store('img','public');
 
 }
 

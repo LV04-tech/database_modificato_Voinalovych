@@ -31,16 +31,7 @@
 
              {{-- @dd($place) --}}
       
-           <x-card
-        
-        :place= $place
-      
-        
-        />
-
-
-
-
+           <x-card :place=$place/>
         </div>
      
        
