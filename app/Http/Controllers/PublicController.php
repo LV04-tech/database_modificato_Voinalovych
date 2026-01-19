@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Place;
 use App\Models\Travel;
 use Illuminate\Http\Request;
+use App\Http\Requests\PlaceRequest;
 
 
 class PublicController extends Controller
@@ -50,18 +51,31 @@ class PublicController extends Controller
     return view('places.create');
   }
   
-  public function store(Request $request)
+  public function store(PlaceRequest $request)
   {
-    $places = Place::create([
+    $location = $request->location;
+    $year = $request->year;
+    $description = $request->description;
+    // $img = null;
+    
+   if($request->file('img')){
+    $img = $request
+         ->file('img')
+         ->store('img','public');
+
+}
+
+Place::create([
       'location'=> $request->location,
       'year'=> $request->year,
       'description'=> $request->description,
+      'img' => $img
     ]);
-    
-   
 
-    return redirect()->route('homepage')->with('successMessage','Hai correttamente inserito il tuo messaggio');
+    return redirect()->back()->with('message','Hai correttamente inserito il tuo messaggio');
   }
+
+
   
 }
 

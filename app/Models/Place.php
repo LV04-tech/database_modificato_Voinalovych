@@ -12,5 +12,6 @@ class Place extends Model
         'location',
         'description',
         'year',
+        'img'
     ];
 }
