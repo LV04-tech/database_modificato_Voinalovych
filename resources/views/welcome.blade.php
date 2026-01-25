@@ -11,11 +11,9 @@
       {{session ('emailError')}}
     </div>
   @endif
-  @if(session()->has('successMessage'))
-  <div class="alert alert-success">
-    {{session('successMessage')}}
-  </div>
-  @endif
+ 
+  <x-display-message/>
+  
   <div class="row vh-75 justify-content-center align-items-center">
     <div class="col-12">
       <h1 class="text-center py-4 display-4 text-custom">
@@ -25,4 +23,6 @@
   </div>
 </div>
   
+
+
   </x-layout>

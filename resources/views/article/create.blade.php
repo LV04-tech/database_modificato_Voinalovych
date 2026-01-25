@@ -1,9 +1,10 @@
+
 <x-layout>
   
    {{-- header  --}}
   <div class="container-fluid  bg-secondary ">
     <div class="row justify-content-center text-center text-white">
-      <h2 class="my-5 subject">Inserisci il tuo luogo preferito</h2>
+      <h2 class="my-5 subject">Inserisci l'articolo</h2>
     </div>
     <div class="row justify-content-center">
       <div class="col-12 col-md-4 text-white text-uppercase">
@@ -20,21 +21,21 @@
         <form 
          class="rounded-4 shadow bg_secondary-subtle p-3"
           method="POST" 
-          action="{{route('place.store')}}"
+          action="{{route('article.store')}}"
           enctype="multipart/form-data">
           
           @csrf
           <div class="mb-3">
-            <label for="location" class="form-label">Luogo</label>
-            <input type="text" name="location" value="{{old('location')}}" class="form-control" id="location" aria-describedby="placeHelp">  
+            <label for="title" class="form-label">Titolo articolo</label>
+            <input type="text" name="title" value="{{old('title')}}" class="form-control" id="title">  
           </div>
           <div class="mb-3">
-            <label for="year" class="form-label">Anno</label>
-            <input type="text" name="year" value="{{old('year')}}" class="form-control" id="year" aria-describedby="yearHelp">
+            <label for="subtitle" class="form-label">Subtitolo dell'articolo</label>
+            <input type="text" name="subtitle" value="{{old('subtitle')}}" class="form-control" id="subtitle">
           </div>
           <div class="mb-3">
-            <label for="description" class="form-label">Descrizione:</label>
-            <textarea name="description" id="" cols="30" rows="10" class="form-control">{{old('description')}}</textarea>
+            <label for="body" class="form-label">Corpo dell'articolo</label>
+            <textarea name="body" id="body" cols="30" rows="10" class="form-control">{{old('body')}}</textarea>
           </div>
           <div class="mb-3">
             <label for="img" class="form-label">Inserisci immagine</label>
@@ -42,7 +43,7 @@
           </div>
           
           
-          <button type="submit" class="btn btn-success">Inserisci la tua esperienza</button>
+          <button type="submit" class="btn btn-success">Crea articolo</button>
         </form>
         
       </div>

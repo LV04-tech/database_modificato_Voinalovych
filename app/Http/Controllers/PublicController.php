@@ -10,6 +10,8 @@ use App\Http\Requests\PlaceRequest;
 
 class PublicController extends Controller
 {
+
+  
   
   public function homepage() 
   {
@@ -36,7 +38,7 @@ class PublicController extends Controller
     //   ['id'=> '3', 'localita'=>'Scozia', 'img'=>'/media/paesi/Scotland.jpg', 'voto'=>'Se ci si vuole immergere completamente nell atmosfera della vita scozzese non cè modo migliore che trascorrere qualche giorno su una delle sue numerose isole'],  
       
     // ];
-     $places= Place::all();
+     $places= Place::all(); // =>questo siginifica fare la query al db SELECT * FROM PLACE;
 
     // foreach ($places as $place) {
     //   if($id == $place['id']){
@@ -61,9 +63,9 @@ class PublicController extends Controller
    if($request->file('img')){
     $img = $request->file('img')->store('img','public');
 
-}
+  }
 
-Place::create([
+ Place::create([
       'location'=> $request->location,
       'year'=> $request->year,
       'description'=> $request->description,
