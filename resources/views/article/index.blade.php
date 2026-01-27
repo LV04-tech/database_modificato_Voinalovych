@@ -19,7 +19,7 @@
         @foreach($articles as $article)
         <div class="col-12 col-md-4 my-5 d-flex alighn-items-center justify-content-center">
            <div class="photo" style="width: 15rem;">
-              <img src="{{Storage::url($article->img)}}" class="card-img-top photo" alt="posti visitati">
+              <img src="{{Storage::url($article->img)}}" class="card-img-top" alt="posti visitati">
               <div class="card-body ">
                 <h5 class="card-title py-4">{{$article->title}}</h5>
                 <p class="card-subtitle text py-3"> {{$article->subtitle}}</p>

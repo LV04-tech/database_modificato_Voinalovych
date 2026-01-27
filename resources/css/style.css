@@ -93,6 +93,7 @@
   
 }
 .text{
+  
   text-align: center;
   justify-content: center;
   font-family: "Raleway", sans-serif;
@@ -101,19 +102,20 @@
 
 a.btn{
   height: 40px;
-  width: 150px;
-  border: 3px solid grey;
+  width: 100px;
+  font-size: 10px;
+  border: 3px solid rgb(112, 192, 152);
   background-color:rgb(192, 204, 204);
   color: black;
   transition: 0.2s;
   cursor: pointer;
 }
 
-.btn:hover{
+a.btn:hover{
   font-family: "Lobster", sans-serif;
   transform: scale(1.1);
   background-color: rgb(112, 192, 152);
-  color: white;
+  color:  rgb(76, 73, 73) ;
   border: 2px solid grey;
 }
 

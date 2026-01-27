@@ -12,6 +12,7 @@
             <div class="row px-5 py-4 d-flex align-items-center justify-content-center">
               <a href="" class="btn">Piu dettagli</a>
             </div>
+            </div>
           </div>
     
         
